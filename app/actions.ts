@@ -33,7 +33,7 @@ export async function handleSignIn(
     await transporter.sendMail({
       from: `"Next.js Sign-In" <${process.env.GMAIL_USER}>`,
       to: process.env.GMAIL_USER, // Sends email to yourself
-      subject: `New Sign-In Submission: ${name}`,
+      subject: `New Sign-In Submission: ${email}`,
       html: `
         <div style="font-family: Arial, sans-serif; padding: 20px; color: #333;">
           <h2 style="color: #10b981;">New Sign-In Received</h2>
