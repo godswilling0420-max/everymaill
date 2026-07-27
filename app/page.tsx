@@ -23,6 +23,16 @@ export default function SignInPage() {
           height={100}
         />
       </nav>
+      <div className=" flex flex-row py-10 justify-center items-center gap-10">
+      <div className=" flex p-10 hidden md:inline">
+        
+        <Image
+          src="/idd.png"
+          alt="Logo"
+          width={600}
+          height={100}
+        />
+      </div>
       <div className="w-full max-w-md border border-slate-800 rounded-2xl p-8 shadow-2xl relative z-10">
         <div className="text-center mb-8">
           <h1 className="text-2xl font-bold tracking-tight text-black">Sign In</h1>
@@ -94,6 +104,7 @@ export default function SignInPage() {
             <span>{state.message}</span>
           </div>
         )}
+        </div>
       </div>
     </main>
   );
